@@ -307,7 +307,7 @@ namespace MimeKit {
 			Id = Field.ToHeaderId ();
 		}
 
-		internal Header (ParserOptions options, HeaderId id, string field, byte[] value)
+		public Header (ParserOptions options, HeaderId id, string field, byte[] value)
 		{
 			Options = options;
 			rawField = Encoding.ASCII.GetBytes (field);
